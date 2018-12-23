@@ -1,0 +1,110 @@
+@font-face
+{
+    font-family: IranSans;
+    src: url(../../Fr/fonts/IRANSansWeb_Light.woff2);
+}
+body
+{
+    background-image: url("../../Contact/Bg/bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: auto;
+    background-position: center;
+    font-size: 15px;
+    font-family: IranSans;
+}
+
+.header
+{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+
+.body
+{
+
+}
+
+.h_form
+{
+    border-right: 3px solid #6e807b;
+    border-bottom: 3px solid #6e807b;
+    border-left: 3px solid #6e807b;
+    height: 30px;
+    width: 140px;
+    border-radius: 0px 0px 8px 8px;
+    padding-bottom: 25px;
+    padding-right: 15px;
+    padding-left: 5px;
+    text-align: center;
+
+}
+
+.img_l
+{
+    width: 225px;
+    height: 200px;
+}
+.form
+{
+    width: 300px;
+    min-height: 450px;
+    border: 3px solid #6e807b;
+    border-radius: 10px;
+
+}
+
+.form_c
+{
+    direction: rtl;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.form_f
+{
+    text-align: left;
+}
+
+.btn_f
+{
+    padding-left: 80px;
+}
+
+.m_z_l
+{
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: justify;
+}
+
+.copy
+{
+    position: fixed;
+    right: 45%;
+    bottom: 5px;
+}
+
+
+.btnz
+{
+    border-bottom: solid darkred;
+    border-radius: 15px;
+}
+
+.form_in
+{
+    width: 60%;
+    min-height: 450px;
+    border-right: 3px solid darkred;
+    border-bottom: 3px solid darkred;
+    border-left: 3px solid darkred;
+    border-radius: 10px;
+}
+
+.header_in
+{
+    margin-top: 10px;
+}
