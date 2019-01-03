@@ -47,5 +47,7 @@ $I_U = "Admin UserName : ";
 $I_E = "Email : ";
 $I_P = "Password : ";
 $I_PP= "Confirm Password : ";
+$I_L = "Logo Site : ";
+$I_PL= "Profle Photo : ";
 $I_S = "Install Now";
 ?>

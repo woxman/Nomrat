@@ -68,29 +68,47 @@
         //echo Form 3
         */
         ?>
-        <form>
+        <form action="#">
             <div class="form-group row">
-                <label for="inputEmail3" class="col-sm-3 col-form-label"><?php echo ($I_U)?></label>
+                <label for="User" class="col-sm-3 col-form-label"><?php echo ($I_U)?></label>
                 <div class="col-sm-3">
-                    <input type="email" class="form-control" id="inputEmail3" >
+                    <input type="text" class="form-control" id="User" name="User" >
                 </div>
             </div>
             <div class="form-group row">
-                <label for="inputPassword3" class="col-sm-3 col-form-label"><?php echo ($I_E)?></label>
+                <label for="Mail" class="col-sm-3 col-form-label"><?php echo ($I_E)?></label>
                 <div class="col-sm-3">
-                    <input type="password" class="form-control" id="inputPassword3">
+                    <input type="email" class="form-control" id="Mail" name="Mail">
                 </div>
             </div>
             <div class="form-group row">
-                <label for="inputPassword3" class="col-sm-3 col-form-label"><?php echo ($I_P)?></label>
+                <label for="Pass" class="col-sm-3 col-form-label"><?php echo ($I_P)?></label>
                 <div class="col-sm-3">
-                    <input type="password" class="form-control" id="inputPassword3">
+                    <input type="password" class="form-control" id="Pass" name="Pass">
                 </div>
             </div>
             <div class="form-group row">
-                <label for="inputPassword3" class="col-sm-3 col-form-label"><?php echo ($I_PP)?></label>
+                <label for="PPass" class="col-sm-3 col-form-label"><?php echo ($I_PP)?></label>
                 <div class="col-sm-3">
-                    <input type="password" class="form-control" id="inputPassword3">
+                    <input type="password" class="form-control" id="PPass" name="PPass">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="Logo" class="col-sm-3 col-form-label"><?php echo ($I_L)?></label>
+                <div class="col-sm-3">
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input " id="Logo">
+                        <label class="custom-file-label" for="Logo">Choose file</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="Photo" class="col-sm-3 col-form-label"><?php echo ($I_PL)?></label>
+                <div class="col-sm-3">
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="Photo">
+                        <label class="custom-file-label" for="Photo">Choose file</label>
+                    </div>
                 </div>
             </div>
 
