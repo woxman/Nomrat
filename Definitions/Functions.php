@@ -44,6 +44,8 @@ function Copy_Right()
 #Copy____________________Right
 $I_T = "نصب نمرات";
 $I_U = "Admin UserName : ";
+$I_E = "Email : ";
 $I_P = "Password : ";
-$I_PP = "Confirm Password : ";
+$I_PP= "Confirm Password : ";
+$I_S = "Install Now";
 ?>

@@ -7,10 +7,6 @@
     <script src="Fr/js/Form_Au.js"></script>
 </head>
 <body dir="rtl">
-<noscript>
-    جاوا اسکریپت در مرورگر شما غیر فعال است!
-    <br>
-</noscript>
 <form name="form-name" action="#">
     <label for="name">نام: </label>
     <input id="name" name="name" type="text" size="50" placeholder="نام خود را وارد کنید">

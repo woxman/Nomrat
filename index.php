@@ -24,7 +24,11 @@
 <!--------------------------Start Body---------------------------------------->
 <div class="body" dir="rtl" align="center">
     <div align="left" dir="ltr" class="form_in">
-        <?php
+        <noscript>
+            جاوا اسکریپت در مرورگر شما غیر فعال است!
+            <br>
+        </noscript>
+        <?php /*
         $FileName = 'Definitions/Config.php';
         $DB_Name = "nomrat";
         A:
@@ -62,8 +66,40 @@
         }
         C:
         //echo Form 3
-
+        */
         ?>
+        <form>
+            <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-3 col-form-label"><?php echo ($I_U)?></label>
+                <div class="col-sm-3">
+                    <input type="email" class="form-control" id="inputEmail3" >
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword3" class="col-sm-3 col-form-label"><?php echo ($I_E)?></label>
+                <div class="col-sm-3">
+                    <input type="password" class="form-control" id="inputPassword3">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword3" class="col-sm-3 col-form-label"><?php echo ($I_P)?></label>
+                <div class="col-sm-3">
+                    <input type="password" class="form-control" id="inputPassword3">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword3" class="col-sm-3 col-form-label"><?php echo ($I_PP)?></label>
+                <div class="col-sm-3">
+                    <input type="password" class="form-control" id="inputPassword3">
+                </div>
+            </div>
+
+            <div class="form-group row "align="center">
+                <div class="col-sm-12">
+                    <button type="submit" class="btn btn-warning"><?php echo ($I_S )?></button>
+                </div>
+            </div>
+        </form>
     </div>
     <!--------------------------End Body---------------------------------------->
     <!--------------------------Start Footer---------------------------------------->
