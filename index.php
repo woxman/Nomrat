@@ -98,7 +98,7 @@
                 <div class="col-sm-3">
                     <div class="custom-file">
                         <input type="file" class="custom-file-input " id="Logo">
-                        <label class="custom-file-label" for="Logo">Choose file</label>
+                        <label class="custom-file-label" for="Logo">225*222</label>
                     </div>
                 </div>
             </div>
@@ -107,7 +107,7 @@
                 <div class="col-sm-3">
                     <div class="custom-file">
                         <input type="file" class="custom-file-input" id="Photo">
-                        <label class="custom-file-label" for="Photo">Choose file</label>
+                        <label class="custom-file-label" for="Photo">300*300</label>
                     </div>
                 </div>
             </div>
