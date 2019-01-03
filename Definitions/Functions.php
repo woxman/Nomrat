@@ -46,5 +46,4 @@ $I_T = "نصب نمرات";
 $I_U = "Admin UserName : ";
 $I_P = "Password : ";
 $I_PP = "Confirm Password : ";
-
 ?>

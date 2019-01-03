@@ -8,7 +8,11 @@
 require_once "Fr/js/Time_Date/jdf.php";
 require_once "Definitions/Amounts.php";
 require_once "Definitions/Functions.php";
-require_once "Definitions/Config.php";
+
+if (file_exists('Definitions/Config.php')) {
+    include_once "Definitions/Config.php";
+}
+
 ?>
 <script src="Fr/js/Api-Clock.js"></script>
 <script src="http://api.open-notify.org/iss-pass.json?lat=1&lon=1&callback=setUTS"></script>

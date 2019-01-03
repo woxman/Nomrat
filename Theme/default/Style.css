@@ -102,6 +102,8 @@ body
     border-bottom: 3px solid darkred;
     border-left: 3px solid darkred;
     border-radius: 10px;
+    padding-left: 30px ;
+    padding-top: 50px;
 }
 
 .header_in

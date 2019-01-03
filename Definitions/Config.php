@@ -1,11 +1,11 @@
-<?php
+<?php 
+ //Database Connect Information
 
-//Database Connect Information
 
-$dbhost="localhost"; //It is usually "localhost"
+$DB_Host="localhost";                      //It is usually "/localhost/" 
 
-$dbuname="root";     //Database Username
+$DB_User="root";                           //Database Username 
 
-$dbpass="";          //Database Password
+$DB_Pass="";                                //Database Password 
 
 ?>

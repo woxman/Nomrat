@@ -18,7 +18,7 @@
     <br><br><br>
 <!--------------------------End Header---------------------------------------->
 <!--------------------------Start Body---------------------------------------->
-<div class="body">
+<div class="body" dir="rtl" align="center">
     <div class="form bg-light">
         <div class="h_form bg-light"><?php print ($A_T_1)?></div>
         <div class="img_l">
