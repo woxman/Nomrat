@@ -18,7 +18,7 @@
     <br>
 
     <label for="numbers">عدد :</label>
-    <input id="numbers" name="numbers" type="numbers" size="50" placeholder="عدد خود را وارد کنید">
+    <input id="numbers" name="numbers" type="number" size="50" placeholder="عدد خود را وارد کنید">
     <br>
     <br>
 

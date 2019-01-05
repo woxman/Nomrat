@@ -68,7 +68,7 @@
         //echo Form 3
         */
         ?>
-        <form action="#">
+        <form name="form-name" action="#">
             <div class="form-group row">
                 <label for="User" class="col-sm-3 col-form-label"><?php echo ($I_U)?></label>
                 <div class="col-sm-3">
@@ -112,12 +112,17 @@
                 </div>
             </div>
 
-            <div class="form-group row "align="center">
+            <label for="check">تایید: </label>
+            <input id="check" name="check" type="checkbox" value="1">
+            <br>
+            <div class="form-group row " align="center">
                 <div class="col-sm-12">
-                    <button type="submit" class="btn btn-warning"><?php echo ($I_S )?></button>
+                    <input name="send" id="send" type="button" value="<?php echo ($I_S )?>" class="btn btn-warning"  onclick="formGet(this.form, 'process.php');">
                 </div>
             </div>
         </form>
+    </div>
+    <div id="show-result">
     </div>
     <!--------------------------End Body---------------------------------------->
     <!--------------------------Start Footer---------------------------------------->

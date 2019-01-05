@@ -1,16 +1,19 @@
 <?php
-$name = @$_POST['name'];
-$email = @$_POST['email'];
-$numbers = @$_POST['numbers'];
-$check = @$_POST['check'];
-$number=@$_POST['number'];
+$User = @$_POST['User'];
+$Email = @$_POST['Mail'];
+$Pass = @$_POST['Pass'];
+$PPass = @$_POST['PPass'];
+
+
 
 // sleep for 2 seconds
 sleep(2);
 
-echo "نام شما: $name <br>";
-echo "پست الکترونیک شما: $email <br>";
-echo "عدد: $numbers <br>";
-echo "شماره انتخاب شده: $number <br>";
-echo "وضعیت تایید: $check <br>";
+echo "نام شما: $User <br>";
+echo "پست الکترونیک شما: $Email <br>";
+echo "پسورد: $Pass <br>";
+echo "وضعیت تایید پسورد: $PPass <br>";
+
+
+
 ?>

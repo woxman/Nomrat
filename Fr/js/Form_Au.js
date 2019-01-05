@@ -54,6 +54,14 @@ function getFormValues(form){
                 str += form.elements[i].name +
                     '=' + encodeURI(form.elements[i].value) + '&';
                 break;
+            case "password":
+                str += formobj.elements[i].name +
+                    "=" + encodeURI(form.elements[i].value) + "&";
+                break;
+            case "email":
+                str += formobj.elements[i].name +
+                    "=" + encodeURI(form.elements[i].value) + "&";
+                break;
             case 'textarea':
                 str += form.elements[i].name +
                     '=' + encodeURI(form.elements[i].value) + '&';
