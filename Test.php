@@ -123,28 +123,7 @@
 <hr>
 پس از کلیک بر روی دکمه ارسال، تابع جاوا اسکریپتی formGet اجرا شده و فرآیند درخواست ای جکس شروع می شود، در نهایت نتیجه در بلاک div با آی دی فرضی show-result نمایش داده خواهد شد، یکی از بخش های مهم این کد ارسال آبجکت فرم با تابع formGet و استفاده از آن در تابع getFormValues است، از این آبجکت برای دسترسی به زیرمجموعه های تگ form مورد نظر استفاده خواهیم کرد.
     <?php
-    /*
-    $FileName = 'Definitions/Config.php';
-        $D_B_H="localhost";
-        $D_B_U="root";
-        $D_B_P="";
 
-        $my_file = $FileName;
-        $handle = fopen($my_file, 'w') or die('Cannot open file:  '.$my_file); //implicitly creates file
-        $data1 = "<?php \n //Database Connect Information";
-
-        $data2 = '$DB_Host='.'"'."$D_B_H".'"'.';                      //It is usually "/localhost/" ';
-                
-        $data3 = '$DB_User='.'"'."$D_B_U".'"'.';                           //Database Username ';
-
-        $data4  = '$DB_Pass='.'"'."$D_B_P".'"'.';                                //Database Password ';
-
-        fwrite($handle, $data1."\n\n\n");
-        fwrite($handle, $data2."\n\n");
-        fwrite($handle, $data3."\n\n");
-        fwrite($handle, $data4."\n\n?>");
-        echo "Create SucseesFully...";
-*/
     ?>
 </body>
 </html>
