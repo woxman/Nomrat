@@ -54,13 +54,9 @@ function getFormValues(form){
                 str += form.elements[i].name +
                     '=' + encodeURI(form.elements[i].value) + '&';
                 break;
-            case "password":
-                str += formobj.elements[i].name +
-                    "=" + encodeURI(form.elements[i].value) + "&";
-                break;
-            case "email":
-                str += formobj.elements[i].name +
-                    "=" + encodeURI(form.elements[i].value) + "&";
+            case 'email':
+                str += form.elements[i].name +
+                    '=' + encodeURI(form.elements[i].value) + '&';
                 break;
             case 'textarea':
                 str += form.elements[i].name +
@@ -79,6 +75,7 @@ function getFormValues(form){
                         '=' + '0' + '&';
                 }
                 break;
+
         }
     }
     str = str.substr(0, (str.length - 1));
