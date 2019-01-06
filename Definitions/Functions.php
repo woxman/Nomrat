@@ -1,4 +1,21 @@
 <?php
+    global $I_T;
+    $I_T = "نصب نرات";
+    global $I_U;
+    $I_U = "Admin UserName : ";
+    global $I_E;
+    $I_E = "Email : ";
+    global $I_P;
+    $I_P = "Password : ";
+    global $I_PP;
+    $I_PP= "Confirm Password : ";
+    global $I_L;
+    $I_L = "Logo Site : ";
+    global $I_PL;
+    $I_PL= "Profle Photo : ";
+    global $I_S;
+    $I_S = "Install Now";
+
 #Rime_______________Zone;
 date_default_timezone_set("Asia/Tehran");
 #Rime_______________Zone;
@@ -37,17 +54,13 @@ function Clock_Data()
 }
 #Clock___________________Time;
 #Copy____________________Right
+#Form____________________2
+#Form____________________2
+
 function Copy_Right()
 {
     echo ("<div class='copy'> Power by : <a href='http://Nomrat.ir' target='_blank'>Nomrat.ir </a><i class='fa fa-copyright'></i>");
 }
 #Copy____________________Right
-$I_T = "نصب نمرات";
-$I_U = "Admin UserName : ";
-$I_E = "Email : ";
-$I_P = "Password : ";
-$I_PP= "Confirm Password : ";
-$I_L = "Logo Site : ";
-$I_PL= "Profle Photo : ";
-$I_S = "Install Now";
+
 ?>

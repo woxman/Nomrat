@@ -11,7 +11,7 @@
 <body  onload="ShowDate();">
 <script>
     var div_id = 'show-result';
-    var loading_message = '<img src="../../Contact/Loading/Gear-1s-200px.gif" alt="loading" height="16" width="16"> لطفا کمی صبر کنید...';
+    var loading_message = '<img src="Contact/Loading/Gear-1s-200px.gif" alt="loading" height="16" width="16"> لطفا کمی صبر کنید...';
     function ajaxRequest(){
         var xmlHttp;
         try{
@@ -158,7 +158,56 @@
         //echo Form 3
         */
         ?>
+        <form name="form-name" action="#">
+            <div class="form-group row">
+                <label for="User" class="col-sm-3 col-form-label"><?php echo ($I_U)?></label>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control" id="User" name="User" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="Mail" class="col-sm-3 col-form-label"><?php echo ($I_E)?></label>
+                <div class="col-sm-3">
+                    <input type="email" class="form-control" id="Mail" name="Mail" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="Pass" class="col-sm-3 col-form-label"><?php echo ($I_P)?></label>
+                <div class="col-sm-3">
+                    <input type="password" class="form-control" id="Pass" name="Pass" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="PPass" class="col-sm-3 col-form-label"><?php echo ($I_PP)?></label>
+                <div class="col-sm-3">
+                    <input type="password" class="form-control" id="PPass" name="PPass" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="Logo" class="col-sm-3 col-form-label"><?php echo ($I_L)?></label>
+                <div class="col-sm-3">
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input " id="Logo">
+                        <label class="custom-file-label" for="Logo">225*222</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="Photo" class="col-sm-3 col-form-label"><?php echo ($I_PL)?></label>
+                <div class="col-sm-3">
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="Photo">
+                        <label class="custom-file-label" for="Photo">300*300</label>
+                    </div>
+                </div>
+            </div>
 
+            <div class="form-group row " align="center">
+                <div class="col-sm-12">
+                    <input name="send" id="send" type="button" value="<?php echo ($I_S )?>" class="btn btn-warning"  onclick="formGet(this.form, 'process.php');">
+                </div>
+            </div>
+        </form>
     </div>
     <div id="show-result">
     </div>
