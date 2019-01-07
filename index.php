@@ -111,6 +111,7 @@
         <div class="btn btn-light border"><?php Global_Var(); global $I_T; echo ($I_T);?>&nbsp;<i class="fa fa-toolbox" ></i></div>
     </div>
 </div>
+
 <div class="btnz">
     <br>
 </div>
@@ -124,7 +125,6 @@
         </noscript>
         <?php
         $FileName = 'Definitions/Config.php';
-        $DB_Name = "nomrat";
         A:
         if (file_exists($FileName))
         {
@@ -132,10 +132,9 @@
             if ($Link_C)
             {
                 B:
-                if ($Link_C ->select_db($DB_Name))
+                if ($Link_C ->select_db(isset($DB_Name)))
                 {
-                    #form_2();
-                    form_1();
+                    form_2();
                     #Insert Data Form 2 in Admins Table
                     Goto C;
 
@@ -161,8 +160,7 @@
         C:
         //echo Form 3
         ?>
-
-      <div id="show-result"></div>
+        <div id="show-result">s</div>
     <!--------------------------End Body---------------------------------------->
     <!--------------------------Start Footer---------------------------------------->
     <?php #print_r(Copy_Right());?>

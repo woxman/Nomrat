@@ -112,7 +112,15 @@ function Form_1()
     echo("<br>");
     echo("            <div class='form-group row ' align='right'>");
     echo("                <div class='col-sm-12'>");
-    echo("                    <input name='send' id='send' type='button' value='$D_C' class='btn btn-warning' onclick=\"formGet(this.form, 'process.php');\" > ");
+    echo("                    <div class='btn-group btn-group-toggle border' data-toggle='buttons'>");
+    echo("                        <label class='btn btn-primary active border'>");
+    echo("                            <input type='radio' name='send' id='send' autocomplete='off'> $D_C");
+    echo("                        </label>");
+    echo("                        <label class='btn btn-danger border'>");
+    echo("                             <input type='radio' name='send' id='send' autocomplete='off'  onclick=\"formGet(this.form, 'process.php');\"> $D_T");
+    echo("                        </label>");
+    echo("                    </div>");
+
     echo("                </div>");
     echo("            </div>");
     echo("        </form>");
@@ -164,7 +172,7 @@ function form_2(){
     echo("<br>");
     echo("            <div class='form-group row ' align='right'>");
     echo("                <div class='col-sm-12'>");
-    echo("                    <input name='send' id='send' type='button' value='$I_S' class='btn btn-warning' onclick=\"formGet(this.form, 'process.php');\" > ");
+    echo("                    <input name='send' id='send' type='button' value='$I_S' class='btn btn-warning' onclick=\"formGet(this.form, 'process2.php');\" > ");
     echo("                </div>");
     echo("            </div>");
     echo("        </form>");

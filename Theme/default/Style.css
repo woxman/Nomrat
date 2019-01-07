@@ -110,3 +110,13 @@ body
 {
     margin-top: 10px;
 }
+
+#show-result
+{
+    position: fixed;
+    top: 5px;
+    left: 35%;
+    width: 420px;
+    height: 10%;
+    z-index: 1;
+}
