@@ -70,6 +70,10 @@
                     str += form.elements[i].name +
                         '=' + encodeURI(form.elements[i].value) + '&';
                     break;
+                    case 'file':
+                    str += form.elements[i].name +
+                        '=' + encodeURI(form.elements[i].value) + '&';
+                    break;
                     case 'password':
                     str += form.elements[i].name +
                         '=' + encodeURI(form.elements[i].value) + '&';
@@ -104,7 +108,7 @@
 <div>
     <?php print_r(Clock_Data()); ?>
     <div class="header_in" align="center">
-        <div class="btn btn-light border"><?php global $I_T; echo ($I_T);?>&nbsp;<i class="fa fa-toolbox" ></i></div>
+        <div class="btn btn-light border"><?php Global_Var(); global $I_T; echo ($I_T);?>&nbsp;<i class="fa fa-toolbox" ></i></div>
     </div>
 </div>
 <div class="btnz">
@@ -130,7 +134,8 @@
                 B:
                 if ($Link_C ->select_db($DB_Name))
                 {
-                    form_2();
+                    #form_2();
+                    form_1();
                     #Insert Data Form 2 in Admins Table
                     Goto C;
 
@@ -157,8 +162,7 @@
         //echo Form 3
         ?>
 
-      <div id="show-result">
-    </div>
+      <div id="show-result"></div>
     <!--------------------------End Body---------------------------------------->
     <!--------------------------Start Footer---------------------------------------->
     <?php #print_r(Copy_Right());?>

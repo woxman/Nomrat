@@ -17,6 +17,18 @@ function Global_Var()
     $I_PL = "Profle Photo : ";
     global $I_S;
     $I_S = "Install Now";
+    global $D_H;
+    $D_H = "Host : ";
+    global $D_N;
+    $D_N = "Database Name : ";
+    global $D_U;
+    $D_U = "Database User : ";
+    global $D_P;
+    $D_P = "Database Password : ";
+    global $D_T;
+    $D_T = "Test";
+    global $D_C;
+    $D_C = "Connect";
 }
 #Rime_______________Zone;
 date_default_timezone_set("Asia/Tehran");
@@ -56,6 +68,58 @@ function Clock_Data()
 }
 #Clock___________________Time;
 #Copy____________________Right
+#Form____________________1
+function Form_1()
+{
+    Global_Var();
+    global $D_H;
+    global $D_N;
+    global $D_U;
+    global $D_P;
+    global $D_C;
+    global $D_T;
+    echo("<image src='Contact/1.jpg' style='float: right;margin-right: 20px;opacity: 0.25;' class='hidden-xs'>");
+    echo("        <form name='form-name' action='#'>");
+    echo("            <div class='form-group row'>");
+    echo("                <label for='User_H' class='col-sm-5 col-form-label'>$D_H</label>");
+    echo("                <div class='col-sm-5'>");
+    echo("                    <input type='text' class='form-control' id='User_H' name='User_H' required>");
+    echo("                </div>");
+    echo("            </div>");
+    echo("<br>");
+    echo("            <div class='form-group row'>");
+    echo("                <label for='Name_D' class='col-sm-5 col-form-label'>$D_N</label>");
+    echo("                <div class='col-sm-5'>");
+    echo("                    <input type='text' class='form-control' id='Name_D' name='Name_D' required>");
+    echo("                </div>");
+    echo("            </div>");
+    echo("<br>");
+    echo("            <div class='form-group row'>");
+    echo("                <label for='User_D' class='col-sm-5 col-form-label'>$D_U</label>");
+    echo("                <div class='col-sm-5'>");
+    echo("                    <input type='password' class='form-control' id='User_D' name='User_D' required>");
+    echo("                </div>");
+    echo("            </div>");
+    echo("<br>");
+    echo("            <div class='form-group row'>");
+    echo("                <label for='Pass_D' class='col-sm-5 col-form-label'>$D_P</label>");
+    echo("                <div class='col-sm-5'>");
+    echo("                    <input type='password' class='form-control' id='Pass_D' name='Pass_D' required>");
+    echo("                </div>");
+    echo("            </div>");
+    echo("<br>");
+    echo("<br>");
+    echo("<br>");
+    echo("            <div class='form-group row ' align='right'>");
+    echo("                <div class='col-sm-12'>");
+    echo("                    <input name='send' id='send' type='button' value='$D_C' class='btn btn-warning' onclick=\"formGet(this.form, 'process.php');\" > ");
+    echo("                </div>");
+    echo("            </div>");
+    echo("        </form>");
+    echo("    </div>");
+
+}
+#Form____________________1
 #Form____________________2
 function form_2(){
     Global_Var();
@@ -66,56 +130,46 @@ function form_2(){
     global $I_PL;
     global $I_L;
     global $I_S;
+    echo("<image src='Contact/1.jpg' style='float: right;margin-right: 20px;opacity: 0.25;' class='hidden-xs'>");
     echo("        <form name='form-name' action='#'>");
     echo("            <div class='form-group row'>");
-    echo("                <label for='User' class='col-sm-3 col-form-label'>$I_U</label>");
-    echo("                <div class='col-sm-3'>");
+    echo("                <label for='User' class='col-sm-5 col-form-label'>$I_U</label>");
+    echo("                <div class='col-sm-5'>");
     echo("                    <input type='text' class='form-control' id='User' name='User' required>");
     echo("                </div>");
     echo("            </div>");
+    echo("<br>");
     echo("            <div class='form-group row'>");
-    echo("                <label for='Mail' class='col-sm-3 col-form-label'>$I_E</label>");
-    echo("                <div class='col-sm-3'>");
+    echo("                <label for='Mail' class='col-sm-5 col-form-label'>$I_E</label>");
+    echo("                <div class='col-sm-5'>");
     echo("                    <input type='email' class='form-control' id='Mail' name='Mail' required>");
     echo("                </div>");
     echo("            </div>");
+    echo("<br>");
     echo("            <div class='form-group row'>");
-    echo("                <label for='Pass' class='col-sm-3 col-form-label'>$I_P</label>");
-    echo("                <div class='col-sm-3'>");
+    echo("                <label for='Pass' class='col-sm-5 col-form-label'>$I_P</label>");
+    echo("                <div class='col-sm-5'>");
     echo("                    <input type='password' class='form-control' id='Pass' name='Pass' required>");
     echo("                </div>");
     echo("            </div>");
+    echo("<br>");
     echo("            <div class='form-group row'>");
-    echo("                <label for='PPass' class='col-sm-3 col-form-label'>$I_PP</label>");
-    echo("                <div class='col-sm-3'>");
+    echo("                <label for='PPass' class='col-sm-5 col-form-label'>$I_PP</label>");
+    echo("                <div class='col-sm-5'>");
     echo("                    <input type='password' class='form-control' id='PPass' name='PPass' required>");
     echo("                </div>");
     echo("            </div>");
-    echo("            <div class='form-group row'>");
-    echo("                <label for='Logo' class='col-sm-3 col-form-label'>$I_L</label>");
-    echo("                <div class='col-sm-3'>");
-    echo("                    <div class='custom-file'>");
-    echo("                        <input type='file' class='custom-file-input ' id='Logo'>");
-    echo("                        <label class='custom-file-label' for='Logo'>225*222</label>");
-    echo("                    </div>");
-    echo("                </div>");
-    echo("            </div>");
-    echo("            <div class='form-group row'>");
-    echo("                <label for='Photo' class='col-sm-3 col-form-label'>$I_PL</label>");
-    echo("                <div class='col-sm-3'>");
-    echo("                    <div class='custom-file'>");
-    echo("                        <input type='file' class='custom-file-input' id='Photo'>");
-    echo("                        <label class='custom-file-label' for='Photo'>300*300</label>");
-    echo("                    </div>");
-    echo("                </div>");
-    echo("            </div>");
-    echo("            <div class='form-group row ' align='center'>");
+    echo("<br>");
+    echo("<br>");
+    echo("<br>");
+    echo("            <div class='form-group row ' align='right'>");
     echo("                <div class='col-sm-12'>");
     echo("                    <input name='send' id='send' type='button' value='$I_S' class='btn btn-warning' onclick=\"formGet(this.form, 'process.php');\" > ");
     echo("                </div>");
     echo("            </div>");
     echo("        </form>");
     echo("    </div>");
+
 }
 #Form____________________2
 

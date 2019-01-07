@@ -1,19 +1,29 @@
 <?php
+//Form_________1
+$User_H = @$_POST['User_H'];
+$User_D = @$_POST['Name_D'];
+$User_D = @$_POST['User_D'];
+$User_D = @$_POST['Pass_D'];
+//Form_________1
 
-$User = @$_POST['User'];
-$Email = @$_POST['Mail'];
-$Pass = @$_POST['Pass'];
-$PPass = @$_POST['PPass'];
+//Form_________2
+$User_A = @$_POST['User'];
+$Email_A = @$_POST['Mail'];
+$Pass_A = @$_POST['Pass'];
+$PPass_A = @$_POST['PPass'];
+//Form_________2
 
 
 
 // sleep for 2 seconds
 sleep(2);
 
-echo "نام شما: $User <br>";
-echo "پست الکترونیک شما: $Email <br>";
-echo "پسورد: $Pass <br>";
-echo "وضعیت تایید پسورد: $PPass <br>";
+echo "نام شما: $User_A <br>";
+echo "پست الکترونیک شما: $Email_A <br>";
+echo "پسورد: $Pass_A <br>";
+echo "وضعیت تایید پسورد: $PPass_A <br>";
+
+
 
 
 /*
