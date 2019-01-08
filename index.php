@@ -118,6 +118,7 @@
 <!--------------------------End Header---------------------------------------->
 <!--------------------------Start Body---------------------------------------->
 <div class="body" dir="rtl" align="center">
+    <div id="show-result">sdadss</div>
     <div align="left" dir="ltr" class="form_in">
         <noscript>
             جاوا اسکریپت در مرورگر شما غیر فعال است!
@@ -135,7 +136,7 @@
                 B:
                 if ($Link_C ->select_db($DB_Name))
                 {
-                    return(form_2());
+                    #return(form_2());
                     #Insert Data Form 2 in Admins Table
                     Goto C;
 
@@ -153,10 +154,8 @@
             }
         }else
         {
-            for ($i=0;$i<=1;$i++)
-            {
+
                 return(Form_1());
-            }
             //if form data connect to phpmyadmin
                 #create file config.php
             Goto A;
@@ -164,7 +163,6 @@
         C:
         //echo Form 3
         ?>
-        <div id="show-result">sdss</div>
     <!--------------------------End Body---------------------------------------->
     <!--------------------------Start Footer---------------------------------------->
     <?php #print_r(Copy_Right());?>

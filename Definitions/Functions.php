@@ -120,12 +120,11 @@ function Form_1()
     echo("                             <input type='radio' name='send' id='send' autocomplete='off'  onclick=\"formGet(this.form, 'process2.php');\"> $D_T");
     echo("                        </label>");
     echo("                    </div>");
-
+    echo("                    <input name='send' id='send' type='button' value='$D_T' class='btn btn-warning' onclick=\"formGet(this.form, 'process2.php');\" > ");
     echo("                </div>");
     echo("            </div>");
     echo("        </form>");
     echo("    </div>");
-    return(0);
 }
 #Form____________________1
 #Form____________________2
