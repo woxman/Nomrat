@@ -117,7 +117,7 @@ function Form_1()
     echo("                            <input type='radio' name='send' id='send' autocomplete='off'> $D_C");
     echo("                        </label>");
     echo("                        <label class='btn btn-danger border'>");
-    echo("                             <input type='radio' name='send' id='send' autocomplete='off'  onclick=\"formGet(this.form, 'process.php');\"> $D_T");
+    echo("                             <input type='radio' name='send' id='send' autocomplete='off'  onclick=\"formGet(this.form, 'process2.php');\"> $D_T");
     echo("                        </label>");
     echo("                    </div>");
 
@@ -125,7 +125,7 @@ function Form_1()
     echo("            </div>");
     echo("        </form>");
     echo("    </div>");
-
+    return(0);
 }
 #Form____________________1
 #Form____________________2

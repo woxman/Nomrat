@@ -125,6 +125,7 @@
         </noscript>
         <?php
         $FileName = 'Definitions/Config.php';
+        $DB_Name = "nomrat";
         A:
         if (file_exists($FileName))
         {
@@ -132,9 +133,9 @@
             if ($Link_C)
             {
                 B:
-                if ($Link_C ->select_db(isset($DB_Name)))
+                if ($Link_C ->select_db($DB_Name))
                 {
-                    form_2();
+                    return(form_2());
                     #Insert Data Form 2 in Admins Table
                     Goto C;
 
@@ -152,7 +153,10 @@
             }
         }else
         {
-            Form_1();
+            for ($i=0;$i<=1;$i++)
+            {
+                return(Form_1());
+            }
             //if form data connect to phpmyadmin
                 #create file config.php
             Goto A;
@@ -160,7 +164,7 @@
         C:
         //echo Form 3
         ?>
-        <div id="show-result">s</div>
+        <div id="show-result">sdss</div>
     <!--------------------------End Body---------------------------------------->
     <!--------------------------Start Footer---------------------------------------->
     <?php #print_r(Copy_Right());?>

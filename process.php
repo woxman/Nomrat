@@ -10,10 +10,11 @@ $Pass_D = @$_POST['Pass_D'];
 // sleep for 2 seconds
 sleep(2);
 
-
-
+echo "slm;"
+/*
 $FileName = 'Definitions/Config.php';
     $D_B_H="$User_H";
+    global $DB_Name;
     $DB_Name = "$Name_D";
     $D_B_U="$User_D";
     $D_B_P="$Pass_D";
@@ -28,17 +29,22 @@ $FileName = 'Definitions/Config.php';
 
     $data4 = '$DB_User='.'"'."$D_B_U".'"'.';                           //Database Username ';
 
-    $data5  = '$DB_Pass='.'"'."$D_B_P".'"'.';                                //Database Password ';
+    $data5 = '$DB_Pass='.'"'."$D_B_U".'"'.';                           //Database Password ';
+
 
     fwrite($handle, $data1."\n\n\n");
     fwrite($handle, $data2."\n\n");
     fwrite($handle, $data3."\n\n");
     fwrite($handle, $data4."\n\n?>");
     fwrite($handle, $data5."\n\n?>");
-
+if (file_exists($FileName))
+{
     echo ("<div class='alert alert-danger' role='alert'>");
     echo ("Create SucseesFully...");
     echo ("</div>");
-    sleep(3);
 
+}
+sleep(3);
+
+*/
 ?>
