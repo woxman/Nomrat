@@ -30,6 +30,7 @@ function Global_Var()
     global $D_C;
     $D_C = "Connect";
 }
+
 #Rime_______________Zone;
 date_default_timezone_set("Asia/Tehran");
 #Rime_______________Zone;
@@ -117,10 +118,9 @@ function Form_1()
     echo("                            <input type='radio' name='send' id='send' autocomplete='off'> $D_C");
     echo("                        </label>");
     echo("                        <label class='btn btn-danger border'>");
-    echo("                             <input type='radio' name='send' id='send' autocomplete='off'  onclick=\"formGet(this.form, 'process2.php');\"> $D_T");
+    echo("                             <input type='radio' name='send' id='send' autocomplete='off'  onclick=\"formGet(this.form, 'process.php');\"> $D_T");
     echo("                        </label>");
     echo("                    </div>");
-    echo("                    <input name='send' id='send' type='button' value='$D_T' class='btn btn-warning' onclick=\"formGet(this.form, 'process2.php');\" > ");
     echo("                </div>");
     echo("            </div>");
     echo("        </form>");
@@ -171,7 +171,7 @@ function form_2(){
     echo("<br>");
     echo("            <div class='form-group row ' align='right'>");
     echo("                <div class='col-sm-12'>");
-    echo("                    <input name='send' id='send' type='button' value='$I_S' class='btn btn-warning' onclick=\"formGet(this.form, 'process2.php');\" > ");
+    echo("                    <input name='send' id='send' type='button' value='$I_S' class='btn btn-warning' onclick=\"formGet(this.form, '../process2.php');\" > ");
     echo("                </div>");
     echo("            </div>");
     echo("        </form>");
