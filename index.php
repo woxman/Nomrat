@@ -10,6 +10,17 @@
 </head>
 <body  onload="ShowDate();">
 <script>
+    $('#exampleCheck1').click(function () {
+        //check if checkbox is checked
+        if ($(this).is(':checked')) {
+
+            $('#sendd').removeAttr('disabled'); //enable input
+
+        } else {
+            $('#sendd').attr('disabled', true); //disable input
+        }
+    });
+
     var div_id = 'show-result';
     var loading_message = '<img src="Contact/Loading/Gear-1s-200px.gif" alt="loading" height="16" width="16"> لطفا کمی صبر کنید...';
     function ajaxRequest(){
@@ -101,7 +112,6 @@
         str = str.substr(0, (str.length - 1));
         return str;
     }
-
 </script>
 
 <!--------------------------Start Header---------------------------------------->

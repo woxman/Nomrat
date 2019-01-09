@@ -16,6 +16,8 @@ function Global_Var()
     global $I_PL;
     $I_PL = "Profle Photo : ";
     global $I_S;
+    global $I_AR;
+    $I_AR = "Are you sure of the information you entered ? ";
     $I_S = "Install Now";
     global $D_H;
     $D_H = "Host : ";
@@ -79,6 +81,7 @@ function Form_1()
     global $D_P;
     global $D_C;
     global $D_T;
+    global $I_AR;
     echo("<image src='Contact/1.jpg' style='float: right;margin-right: 20px;opacity: 0.25;' class='hidden-xs'>");
     echo("        <form name='form-name' action='#'>");
     echo("            <div class='form-group row'>");
@@ -109,18 +112,15 @@ function Form_1()
     echo("                </div>");
     echo("            </div>");
     echo("<br>");
+    echo("  <div class='form-group form-check'>");
+    echo("    <input type='checkbox' class='form-check-input' id='exampleCheck1' name='exampleCheck1' required>");
+    echo("    <label class='form-check-label' for='exampleCheck1'>$I_AR</label>");
+    echo("  </div>");
     echo("<br>");
     echo("<br>");
     echo("            <div class='form-group row ' align='right'>");
     echo("                <div class='col-sm-12'>");
-    echo("                    <div class='btn-group btn-group-toggle border' data-toggle='buttons'>");
-    echo("                        <label class='btn btn-primary active border'>");
-    echo("                            <input type='radio' name='send' id='send' autocomplete='off'> $D_C");
-    echo("                        </label>");
-    echo("                        <label class='btn btn-danger border'>");
-    echo("                             <input type='radio' name='send' id='send' autocomplete='off'  onclick=\"formGet(this.form, 'process.php');\"> $D_T");
-    echo("                        </label>");
-    echo("                    </div>");
+    echo("                    <input name='sendd' id='sendd' type='button' value='$D_C' class='btn btn-warning' onclick=\"formGet(this.form, '../process2.php');\" > ");
     echo("                </div>");
     echo("            </div>");
     echo("        </form>");
@@ -137,6 +137,7 @@ function form_2(){
     global $I_PL;
     global $I_L;
     global $I_S;
+    global $I_AR;
     echo("<image src='Contact/1.jpg' style='float: right;margin-right: 20px;opacity: 0.25;' class='hidden-xs'>");
     echo("        <form name='form-name' action='#'>");
     echo("            <div class='form-group row'>");

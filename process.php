@@ -15,6 +15,7 @@ $FileName = 'Definitions/Config.php';
     global $DB_Name;
     $DB_Name = "$Name_D";
     $D_B_U="$User_D";
+
     $D_B_P="$Pass_D";
 
     $my_file = $FileName;
@@ -42,6 +43,9 @@ if (file_exists($FileName))
     echo ("</div>");
 
 }
+sleep(3);
+echo("<meta http-equiv=\"refresh\" content=\"0\">");
+header('Refresh: 1; url=index.php');
 
 
 
