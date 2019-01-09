@@ -84,7 +84,7 @@ function Form_1()
     echo("            <div class='form-group row'>");
     echo("                <label for='User_H' class='col-sm-5 col-form-label'>$D_H</label>");
     echo("                <div class='col-sm-5'>");
-    echo("                    <input type='text' class='form-control' id='User_H' name='User_H' required>");
+    echo("                    <input type='text' class='form-control' id='User_H' name='User_H' value='localhost' required>");
     echo("                </div>");
     echo("            </div>");
     echo("<br>");
@@ -98,7 +98,7 @@ function Form_1()
     echo("            <div class='form-group row'>");
     echo("                <label for='User_D' class='col-sm-5 col-form-label'>$D_U</label>");
     echo("                <div class='col-sm-5'>");
-    echo("                    <input type='password' class='form-control' id='User_D' name='User_D' required>");
+    echo("                    <input type='texts' class='form-control' id='User_D' name='User_D' required>");
     echo("                </div>");
     echo("            </div>");
     echo("<br>");

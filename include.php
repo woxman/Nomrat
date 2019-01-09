@@ -17,4 +17,4 @@ if (file_exists('Definitions/Config.php')) {
 <script src="Fr/js/Api-Clock.js"></script>
 <script src="http://api.open-notify.org/iss-pass.json?lat=1&lon=1&callback=setUTS"></script>
 <link rel="stylesheet" href="Theme/default/Style.css">
-
+<script src="Fr/js/Form_Au.js"></script>

@@ -136,7 +136,7 @@
                 B:
                 if ($Link_C ->select_db($DB_Name))
                 {
-                    #return(form_2());
+                    return(form_2());
                     #Insert Data Form 2 in Admins Table
                     Goto C;
 
