@@ -120,7 +120,7 @@ function Form_1()
     echo("<br>");
     echo("            <div class='form-group row ' align='right'>");
     echo("                <div class='col-sm-12'>");
-    echo("                    <input name='sendNewSms' id='sendNewSms' type='button' value='$D_C' class='btn btn-warning' onclick=\"formGet(this.form, 'process.php');\" > ");
+    echo("                    <input name='sendNewSms' id='sendNewSms' type='button' value='$D_C' class='btn btn-warning' onclick=\"formGet(this.form, 'Process_1.php');\" > ");
     echo("                </div>");
     echo("            </div>");
     echo("        </form>");

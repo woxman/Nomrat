@@ -43,7 +43,7 @@ if (file_exists($FileName))
     echo ("</div>");
 
 }
-sleep(3);
+sleep(4);
 echo("<meta http-equiv=\"refresh\" content=\"0\">");
 header('Refresh: 1; url=index.php');
 

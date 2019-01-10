@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ورود دانش آموز</title>
 
-    <?php require_once "include.php"; ?>
+    <?php require_once "Include.php"; ?>
 </head>
 <body  onload="ShowDate();">
 <!--------------------------Start Header---------------------------------------->

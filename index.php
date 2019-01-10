@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>اینستالر</title>
-    <?php require_once "include.php"?>
+    <?php require_once "Include.php"?>
 </head>
 <body  onload="ShowDate();">
 <script>
@@ -120,7 +120,7 @@
 </div>
 <!--------------------------End Header---------------------------------------->
 <!--------------------------Start Body---------------------------------------->
-<div class="body" dir="rtl" align="center">
+<div class="body" dir="ltr" align="center">
     <div id="show-result"></div>
     <div align="left" dir="ltr" class="form_in">
         <noscript>
@@ -171,7 +171,7 @@
             Goto A;
         }
         C:
-        echo "Form 3";
+        redirect("Panel.php")
         ?>
         <!--------------------------End Body---------------------------------------->
     <!--------------------------Start Footer---------------------------------------->
