@@ -169,6 +169,7 @@ function form_2(){
     echo("                    <input type='password' class='form-control' id='PPass' name='PPass' required>");
     echo("                </div>");
     echo("            </div>");
+    echo("                    <input type='hidden' class='form-control' id='Hidden' name='Hidden' value='1' required>");
     echo("<br>");
     echo("<br>");
     echo("<br>");

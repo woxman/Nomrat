@@ -123,6 +123,15 @@
 <hr>
 پس از کلیک بر روی دکمه ارسال، تابع جاوا اسکریپتی formGet اجرا شده و فرآیند درخواست ای جکس شروع می شود، در نهایت نتیجه در بلاک div با آی دی فرضی show-result نمایش داده خواهد شد، یکی از بخش های مهم این کد ارسال آبجکت فرم با تابع formGet و استفاده از آن در تابع getFormValues است، از این آبجکت برای دسترسی به زیرمجموعه های تگ form مورد نظر استفاده خواهیم کرد.
     <?php
+    $Salt="Hekta";
+    $Pass_A ="13wek79hox12ecdfa12#$@T%#%#@##!@#apdfuOALUJSFOfpgwd2";
+    $Hash_Pass = hash('sha256',$Salt.$Pass_A);
+    $Hash_Pass2 = hash('sha256',$Pass_A);
+    echo ("<br><br><br><br><br><br>");
+    echo ("Size Of : ".strlen($Pass_A)."<br><br><br><br>");
+    echo ($Hash_Pass."<br><br>");
+    echo ($Hash_Pass2."<br><br>");
+    echo ("Size Of : ".strlen($Hash_Pass)."<br><br><br><br>");
 
     ?>
 </body>

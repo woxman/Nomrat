@@ -82,6 +82,10 @@
                     str += form.elements[i].name +
                         '=' + encodeURI(form.elements[i].value) + '&';
                     break;
+                    case 'hidden':
+                    str += form.elements[i].name +
+                        '=' + encodeURI(form.elements[i].value) + '&';
+                    break;
                 case 'select-one':
                     str += form.elements[i].name +
                         '=' + form.elements[i].options[form.elements[i].selectedIndex].value + '&';
@@ -135,10 +139,17 @@
                 B:
                 if ($Link_C ->select_db($DB_Name))
                 {
-                    return(form_2());
-                    #Insert Data Form 2 in Admins Table
-                    Goto C;
-
+                    $record=0;
+                    $result = $Link_C->query("SELECT id FROM admins");
+                    if (mysqli_num_rows($result) != 0)
+                    {
+                        Goto C;
+                    }
+                    else
+                    {
+                        return(form_2());
+                        #Insert Data Form 2 in Admins Table
+                    }
 
                 }else
                 {
@@ -160,7 +171,7 @@
             Goto A;
         }
         C:
-        //echo Form 3
+        echo "Form 3";
         ?>
         <!--------------------------End Body---------------------------------------->
     <!--------------------------Start Footer---------------------------------------->
