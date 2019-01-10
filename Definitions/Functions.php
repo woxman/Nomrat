@@ -113,18 +113,19 @@ function Form_1()
     echo("            </div>");
     echo("<br>");
     echo("  <div class='form-group form-check'>");
-    echo("    <input type='checkbox' class='form-check-input' id='exampleCheck1' name='exampleCheck1' required>");
+    echo("    <input type='checkbox' class='form-check-input' id='exampleCheck1' name='exampleCheck1' checked required>");
     echo("    <label class='form-check-label' for='exampleCheck1'>$I_AR</label>");
     echo("  </div>");
     echo("<br>");
     echo("<br>");
     echo("            <div class='form-group row ' align='right'>");
     echo("                <div class='col-sm-12'>");
-    echo("                    <input name='sendd' id='sendd' type='button' value='$D_C' class='btn btn-warning' onclick=\"formGet(this.form, '../process2.php');\" > ");
+    echo("                    <input name='sendNewSms' id='sendNewSms' type='button' value='$D_C' class='btn btn-warning' onclick=\"formGet(this.form, 'process.php');\" > ");
     echo("                </div>");
     echo("            </div>");
     echo("        </form>");
     echo("    </div>");
+
 }
 #Form____________________1
 #Form____________________2
@@ -138,6 +139,7 @@ function form_2(){
     global $I_L;
     global $I_S;
     global $I_AR;
+
     echo("<image src='Contact/1.jpg' style='float: right;margin-right: 20px;opacity: 0.25;' class='hidden-xs'>");
     echo("        <form name='form-name' action='#'>");
     echo("            <div class='form-group row'>");
@@ -172,11 +174,12 @@ function form_2(){
     echo("<br>");
     echo("            <div class='form-group row ' align='right'>");
     echo("                <div class='col-sm-12'>");
-    echo("                    <input name='send' id='send' type='button' value='$I_S' class='btn btn-warning' onclick=\"formGet(this.form, '../process2.php');\" > ");
+    echo("                    <input name='send' id='send' type='button' value='$I_S' class='btn btn-warning' onclick=\"formGet(this.form, 'Process_2.php');\" > ");
     echo("                </div>");
     echo("            </div>");
     echo("        </form>");
     echo("    </div>");
+
 
 }
 #Form____________________2

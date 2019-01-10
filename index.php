@@ -10,17 +10,6 @@
 </head>
 <body  onload="ShowDate();">
 <script>
-    $('#exampleCheck1').click(function () {
-        //check if checkbox is checked
-        if ($(this).is(':checked')) {
-
-            $('#sendd').removeAttr('disabled'); //enable input
-
-        } else {
-            $('#sendd').attr('disabled', true); //disable input
-        }
-    });
-
     var div_id = 'show-result';
     var loading_message = '<img src="Contact/Loading/Gear-1s-200px.gif" alt="loading" height="16" width="16"> لطفا کمی صبر کنید...';
     function ajaxRequest(){
@@ -128,7 +117,7 @@
 <!--------------------------End Header---------------------------------------->
 <!--------------------------Start Body---------------------------------------->
 <div class="body" dir="rtl" align="center">
-    <div id="show-result">123456789</div>
+    <div id="show-result"></div>
     <div align="left" dir="ltr" class="form_in">
         <noscript>
             جاوا اسکریپت در مرورگر شما غیر فعال است!
@@ -136,11 +125,11 @@
         </noscript>
         <?php
         $FileName = 'Definitions/Config.php';
-        $DB_Name = "nomrat";
         A:
         if (file_exists($FileName))
         {
-            $Link_C = new mysqli($DB_Host,$DB_User,$DB_Pass);
+            global $Link_C ;
+            $Link_C = new mysqli($DB_Host,$DB_User,$DB_Pass,$DB_Name);
             if ($Link_C)
             {
                 B:
