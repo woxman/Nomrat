@@ -40,7 +40,6 @@ function Import_DB()
             $templine = '';
         }
     }
-    echo "Tables imported successfully";
 }
 #Create_______________Database&Tables..;
 #Global_______________Varibles;

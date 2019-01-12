@@ -13,26 +13,26 @@ $Nexted=@$_POST['Hidden'];
 //Form_________2
 if (is_numeric($User_A))
 {
-    echo ("<div class='alert alert-warning' role='alert'>");
+    echo ("<div class='alert alert-warning alert-link' role='alert'>");
     echo ("نام کاربری نادرست است");
     echo ("</div>");
     exit(0);
 }
 if(!mb_eregi("^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$", $Email_A) and $Pass_A != $PPass_A){
 {
-    echo ("<div class='alert alert-warning' role='alert'>");
+    echo ("<div class='alert alert-warning alert-link' role='alert'>");
     echo ("ایمیل  نادرست و گذرواژه متناقض است");
     echo ("</div>");}
     exit(0);
 }else if(!mb_eregi("^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$", $Email_A))
 {
-    echo ("<div class='alert alert-warning' role='alert'>");
+    echo ("<div class='alert alert-warning alert-link' role='alert'>");
     echo ("یک ایمیل صحیح وارد کنید");
     echo ("</div>");
     exit(0);
 }else if($Pass_A != $PPass_A)
 {
-    echo ("<div class='alert alert-warning' role='alert'>");
+    echo ("<div class='alert alert-warning alert-link' role='alert'>");
     echo ("گذرواژه ها یکسان نیست");
     echo ("</div>");
     exit(0);
@@ -45,7 +45,7 @@ sleep(2);
 $sql = "insert into admins values (\"0\",\"$User_A\",\"$Email_A\",\"$Hash_Pass\",\"$Photo_A\")";
 $Link_C->query($sql);
 
-    echo ("<div class='alert alert-success' role='alert'>");
+    echo ("<div class='alert alert-success alert-link' role='alert'>");
     echo ("....عملیات موفق");
     echo ("</div>");
 

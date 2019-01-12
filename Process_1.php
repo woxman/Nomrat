@@ -39,7 +39,7 @@ $FileName = 'Definitions/Config.php';
     fwrite($handle, $data5."\n\n?>");
 if (file_exists($FileName))
 {
-    echo ("<div class='alert alert-success' role='alert'>");
+    echo ("<div class='alert alert-success alert-link' role='alert'>");
     echo ("....عملیات موفق");
     echo ("</div>");
 

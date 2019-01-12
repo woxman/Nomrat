@@ -155,7 +155,6 @@
                 {
                     Over_Write();
                     Import_DB();
-                    echo "SucsessFully Create Database And Table ";
                     //Create Database And Tables
                     Goto B;
                 }
@@ -180,7 +179,7 @@
     <?php
     C:
     sleep(3);
-    redirect("Panel.php");
+    #redirect("Panel.php");
     ?>
 </body>
 </html>
