@@ -11,22 +11,29 @@ $Photo_A = "Profile/Admin.png";
 global $Nexted;
 $Nexted=@$_POST['Hidden'];
 //Form_________2
+if (is_numeric($User_A))
+{
+    echo ("<div class='alert alert-warning' role='alert'>");
+    echo ("نام کاربری نادرست است");
+    echo ("</div>");
+    exit(0);
+}
 if(!mb_eregi("^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$", $Email_A) and $Pass_A != $PPass_A){
 {
     echo ("<div class='alert alert-warning' role='alert'>");
-    echo ("Invalid Email And Passwords Are Not Equal...");
+    echo ("ایمیل  نادرست و گذرواژه متناقض است");
     echo ("</div>");}
     exit(0);
 }else if(!mb_eregi("^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$", $Email_A))
 {
     echo ("<div class='alert alert-warning' role='alert'>");
-    echo ("Invalid Email...");
+    echo ("یک ایمیل صحیح وارد کنید");
     echo ("</div>");
     exit(0);
 }else if($Pass_A != $PPass_A)
 {
     echo ("<div class='alert alert-warning' role='alert'>");
-    echo ("Passwords Are Not Equal...");
+    echo ("گذرواژه ها یکسان نیست");
     echo ("</div>");
     exit(0);
 }
@@ -39,7 +46,7 @@ $sql = "insert into admins values (\"0\",\"$User_A\",\"$Email_A\",\"$Hash_Pass\"
 $Link_C->query($sql);
 
     echo ("<div class='alert alert-success' role='alert'>");
-    echo ("Create SucseesFully...");
+    echo ("....عملیات موفق");
     echo ("</div>");
 
 

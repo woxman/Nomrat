@@ -40,7 +40,7 @@ $FileName = 'Definitions/Config.php';
 if (file_exists($FileName))
 {
     echo ("<div class='alert alert-success' role='alert'>");
-    echo ("Create SucseesFully...");
+    echo ("....عملیات موفق");
     echo ("</div>");
 
 }
