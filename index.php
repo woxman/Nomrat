@@ -7,11 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>اینستالر</title>
     <?php require_once "Include.php"?>
+
 </head>
 <body  onload="ShowDate();">
 <script>
     var div_id = 'show-result';
-    var loading_message = '<img src="Contact/Loading/Gear-1s-200px.gif" alt="loading" height="16" width="16"> لطفا کمی صبر کنید...';
+    var loading_message = '<div class=\'alert alert-light alert-link\' role=\'alert\'><img src="Contact/Loading/Gear-1s-200px.gif" alt="loading" height="16" width="16">.....لطفا کمی صبر کنید</div>';
     function ajaxRequest(){
         var xmlHttp;
         try{
@@ -70,11 +71,11 @@
                     str += form.elements[i].name +
                         '=' + encodeURI(form.elements[i].value) + '&';
                     break;
-                    case 'file':
+                case 'file':
                     str += form.elements[i].name +
                         '=' + encodeURI(form.elements[i].value) + '&';
                     break;
-                    case 'password':
+                case 'password':
                     str += form.elements[i].name +
                         '=' + encodeURI(form.elements[i].value) + '&';
                     break;
@@ -82,7 +83,7 @@
                     str += form.elements[i].name +
                         '=' + encodeURI(form.elements[i].value) + '&';
                     break;
-                    case 'hidden':
+                case 'hidden':
                     str += form.elements[i].name +
                         '=' + encodeURI(form.elements[i].value) + '&';
                     break;
@@ -132,15 +133,13 @@
         A:
         if (file_exists($FileName))
         {
-            global $Link_C ;
-            $Link_C = new mysqli($DB_Host,$DB_User,$DB_Pass,$DB_Name);
+            $Link_C = new mysqli($DB_Host,$DB_User,$DB_Pass);
             if ($Link_C)
             {
                 B:
                 if ($Link_C ->select_db($DB_Name))
                 {
-                    $record=0;
-                    $result = $Link_C->query("SELECT id FROM admins");
+                    $result = $Link_C->query("SELECT ID FROM admins");
                     if (mysqli_num_rows($result) != 0)
                     {
                         Goto C;
@@ -148,11 +147,13 @@
                     else
                     {
                         return(form_2());
-                        #Insert Data Form 2 in Admins Table
+                        #Insert Data Form 2 in Admins Table = Process_2
+
                     }
 
                 }else
                 {
+                    Over_Write();
                     echo "Select Faild";
                     //Create Database And Tables
                     exit(0);
@@ -160,23 +161,26 @@
                 }
             }else
             {
-                echo "Error Code : 59 ";;
+                echo "Error Code : 59 ";
             }
         }else
         {
 
-                return(Form_1());
+            return(Form_1());
             //if form data connect to phpmyadmin
-                #create file config.php
+            #create file config.php
             Goto A;
         }
-        C:
-        redirect("Panel.php")
         ?>
         <!--------------------------End Body---------------------------------------->
-    <!--------------------------Start Footer---------------------------------------->
-    <?php #print_r(Copy_Right());?>
-    <!--------------------------End Footer---------------------------------------->
-</div>
+        <!--------------------------Start Footer---------------------------------------->
+        <?php #print_r(Copy_Right());?>
+        <!--------------------------End Footer---------------------------------------->
+    </div>
+    <?php
+    C:
+    sleep(3);
+    redirect("Panel.php");
+    ?>
 </body>
 </html>

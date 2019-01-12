@@ -34,7 +34,6 @@ $Hash_Pass = hash('sha256',$Salt.$Pass_A);
 
 // sleep for 2 seconds
 sleep(2);
-global $DB_Name;
 
 $sql = "insert into admins values (\"0\",\"$User_A\",\"$Email_A\",\"$Hash_Pass\",\"$Photo_A\")";
 $Link_C->query($sql);
@@ -48,7 +47,7 @@ sleep(6);
 echo("<meta http-equiv=\"refresh\" content=\"0\">");
 header('Refresh: 1; url=index.php');
 sleep(3);
-
+mysqli_close($Link_C);
 ?>
 
 

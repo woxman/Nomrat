@@ -1,4 +1,21 @@
 <?php
+#Change_______________DatabaseName;
+function Over_Write()
+{
+    global $DB_Name;
+    $fname = "Definitions/DB&TB_Creater.sql";
+    $fhandle = fopen($fname,"r");
+    $content = fread($fhandle,filesize($fname));
+    $content = str_replace("Nomrat", "$DB_Name", $content);
+
+    $fhandle = fopen($fname,"w");
+    fwrite($fhandle,$content);
+    fclose($fhandle);
+
+}
+
+#Change_______________DatabaseName;
+#Global_______________Varibles;
 function Global_Var()
 {
     global $I_T;
@@ -32,7 +49,7 @@ function Global_Var()
     global $D_C;
     $D_C = "Connect";
 }
-
+#Global_______________Varibles;
 #Rime_______________Zone;
 date_default_timezone_set("Asia/Tehran");
 #Rime_______________Zone;

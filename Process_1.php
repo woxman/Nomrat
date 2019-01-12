@@ -9,13 +9,14 @@ $Pass_D = @$_POST['Pass_D'];
 
 // sleep for 2 seconds
 sleep(2);
-
+if (file_exists("Definitions/Config.php"))
+{
+    include "Definitions/Config.php";
+}
 $FileName = 'Definitions/Config.php';
     $D_B_H="$User_H";
-    global $DB_Name;
-    $DB_Name = "$Name_D";
+    $DB_Namee = "$Name_D";
     $D_B_U="$User_D";
-
     $D_B_P="$Pass_D";
 
     $my_file = $FileName;
@@ -24,7 +25,7 @@ $FileName = 'Definitions/Config.php';
 
     $data2 = '$DB_Host='.'"'."$D_B_H".'"'.';                      //It is usually "/localhost/" ';
 
-    $data3 = '$DB_Name='.'"'."$DB_Name".'"'.';                      //It is usually "/localhost/" ';
+    $data3 = '$DB_Name='.'"'."$DB_Namee".'"'.';                      //It is usually "/localhost/" ';
 
     $data4 = '$DB_User='.'"'."$D_B_U".'"'.';                           //Database Username ';
 
