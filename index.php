@@ -154,9 +154,9 @@
                 }else
                 {
                     Over_Write();
-                    echo "Select Faild";
+                    Import_DB();
+                    echo "SucsessFully Create Database And Table ";
                     //Create Database And Tables
-                    exit(0);
                     Goto B;
                 }
             }else
