@@ -234,5 +234,15 @@ function Copy_Right()
     echo ("<div class='copy'> Power by : <a href='http://Nomrat.ir' target='_blank'>Nomrat.ir </a><i class='fa fa-copyright'></i>");
 }
 #Copy____________________Right
+#Progres____________________Bar]
+function Progres_Bar()
+{
+    echo("<link rel='stylesheet' type='text/css' href='../Fr/Css/grasp_mobile_progress_circle-1.0.0.css'>");
+    echo("<script src='../Fr/Js/grasp_mobile_progress_circle-1.0.0.js'></script>");
+    echo("<script src='../Fr/Js/script.js'></script>");
+    echo("<div id='progress-circle'></div>");
+
+}
+#Progres____________________Bar
 
 ?>

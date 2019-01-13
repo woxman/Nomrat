@@ -181,11 +181,14 @@
     C:
     echo ("<style  type='text/css'>");
     echo ("@keyframes example{0%{opacity: 0.75;}25%{opacity: 0.25;}50%{background-color: blue;}100%{opacity: 0.05;}}");
-    echo ("body{animation-name: example;animation-duration: 4s;}");
+    echo ("div{animation-name: example;animation-duration: 4s;opacity: 0.02;}");
     echo ("</style>");
-    echo ("<div class='dv'>");
-    echo ("wsdf");
-    echo ("</div>");
+    echo ("<p class='dv'>");
+    echo("<link rel='stylesheet' type='text/css' href='Fr/Css/grasp_mobile_progress_circle-1.0.0.css'>");
+    echo("<script src='Fr/Js/grasp_mobile_progress_circle-1.0.0.js'></script>");
+    echo("<script src='Fr/Js/script.js'></script>");
+    echo("<div id='progress-circle'></div>");
+    echo ("</p>");
     sleep(3);
     #redirect("Panel.php");
     ?>
