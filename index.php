@@ -106,6 +106,7 @@
         str = str.substr(0, (str.length - 1));
         return str;
     }
+
 </script>
 
 <!--------------------------Start Header---------------------------------------->
@@ -178,6 +179,13 @@
     </div>
     <?php
     C:
+    echo ("<style  type='text/css'>");
+    echo ("@keyframes example{0%{opacity: 0.75;}25%{opacity: 0.25;}50%{background-color: blue;}100%{opacity: 0.05;}}");
+    echo ("body{animation-name: example;animation-duration: 4s;}");
+    echo ("</style>");
+    echo ("<div class='dv'>");
+    echo ("wsdf");
+    echo ("</div>");
     sleep(3);
     #redirect("Panel.php");
     ?>
