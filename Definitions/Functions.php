@@ -45,6 +45,10 @@ function Import_DB()
 #Global_______________Varibles;
 function Global_Var()
 {
+    global $P_L;
+    $P_L = "پنل ورود";
+    global $P;
+    $P="پنل";
     global $I_T;
     $I_T = "نصب نمرات";
     global $I_U;

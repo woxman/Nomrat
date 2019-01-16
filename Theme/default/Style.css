@@ -121,6 +121,30 @@ body
     z-index: 1;
 }
 
+#formm_2
+{
+    width: 800px;
+    min-height: 500px;
+    border: 3px solid #6e807b;
+    border-radius: 70px 2px 70px 2px;
+    margin-top: 40px;
+}
+.P_T
+{
+    transform: rotate(-90deg);
+    margin-top:14% ;
+    position: relative;
+    left: -47%;
+
+}
+
+.P_S
+{
+    transform: rotate(90deg);
+    margin-top:4.50% ;
+    position: relative;
+    left: 47%;
+}
 
 
 
