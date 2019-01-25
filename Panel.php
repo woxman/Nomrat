@@ -25,19 +25,21 @@
                             <div class="btn btn-light border"><?php Global_Var(); global $P_L; echo ($P_L);?>&nbsp;<i class="fa fa-person-sign" ></i></div>
                         </div>
                     </div>
-                    <img src="Contact/Logo/logo.png" alt="">
                     <hr>
-                    <P style="text-align: justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus molestias, sint. Aliquam assumenda, blanditiis consectetur enim eos ex
-                        harum modi, molestias nesciunt nulla officia quos repellat tempore veniam voluptatem. Tempora!</P>
-
-                    <br><br><br><br>
+                    <img src="Contact/Logo/logo.png" alt="" class="img-fluid">
+                    <br>
+                    <br>
+                    <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus molestias, sint. Aliquam assumenda,
+                        blanditiis consectetur enim eos ex harum modi, molestias nesciunt nulla officia quos repellat tempore veniam voluptatem. Tempora!
+                    </P>
+                    <br><br>
                     <a href="Teacher.php"><button class="btn btn-success col-md-6 col-xs-3 P_L "><?php echo ("ورود ".$A_T_3."&nbsp; <i class=\"fa fa-chalkboard-teacher\" ></i>")?></button></a>
                     <a href="Student.php"><button class="btn btn-warning col-md-6 col-xs-3 P_L"><?php echo ("ورود ".$A_T_2."&nbsp; <i class=\"fa fa-user-graduate\" ></i>")?></button></a>
                  </div>
          </div>
         <!--------------------------End Body---------------------------------------->
         <!--------------------------Start Footer---------------------------------------->
-                <?php #print_r(Copy_Right());?>
+                <?php print_r(Copy_Right());?>
          <!--------------------------End Footer---------------------------------------->
     </div>
 </div>

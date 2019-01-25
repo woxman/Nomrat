@@ -113,7 +113,7 @@ function Clock_Data()
     echo ("&nbsp;&nbsp;&nbsp;&nbsp;<i class=' fa fa-clock ' ></i><div id='time' style=' float: left'></div>");
     echo ("</div>");
     echo ("<div class='btn btn-light border '>");
-    echo ("<i class='fa fa-home far-red-river '></i>");
+    echo ("<a href='Panel.php'><i class='fa fa-home far-red-river '></i></a>");
     echo ("</div>");
     echo ("</div>");
 }
@@ -134,7 +134,8 @@ function Form_1()
     echo("        <form name='form-name' action='#'>");
     echo("            <div class='form-group row'>");
     echo("                <label for='User_H' class='col-sm-5 col-form-label'>$D_H</label>");
-    echo("                <div class='col-sm-5'>");
+    echo("                <
+                 class='col-sm-5'>");
     echo("                    <input type='text' class='form-control' id='User_H' name='User_H' value='localhost' required>");
     echo("                </div>");
     echo("            </div>");
