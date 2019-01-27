@@ -249,5 +249,42 @@ function Progres_Bar()
 
 }
 #Progres____________________Bar
+function Con_DB()
+{
+    global $DB_Host;
+    global $DB_Name;
+    global $DB_User;
+    global $DB_Pass;
+    try {
+        $db = new PDO('mysql:host='.$DB_Host.';dbname='.$DB_Name.';charset=utf8mb4', $DB_User, $DB_Pass);
+        $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
+    }
+    catch (PDOException $e)
+    {
+        echo "Connection failed : ". $e->getMessage();
+    }
+}
 
+function Log_Out()
+{
+    unset($_SESSION['sess_user_id'],$_SESSION['sess_username'],$_SESSION['sess_name']);
+
+}
+
+function Redirect_To($addr)
+{
+    header("Location: $addr");
+}
+
+function Get_Hash($str)
+{
+    $salt="Hekta";
+    $hash=hash('sha256',$salt.$str);
+    return($hash);
+}
+function Panel()
+{
+
+}
 ?>

@@ -1,38 +1,19 @@
 <?php
-/*
-if (Is_Login()) 
+session_start();
+if (isset($_Get['Reset']))
 {
-	#Show Panle
+    $Reset=isset($_Get['Reset']);
+    switch ($Reset)
+    {
+        case 1:
+            unset($_SESSION['sess_user_id'],$_SESSION['sess_username'],$_SESSION['sess_name']);
+    }
 }
-elseif (isset($_POST['Email'],$_POST['Pass'])) 
-{
-	if (Do_Login($_POST['Email'],$_POST['Pass']))
-	{
-		#True_User_Pass
-		#Login_SucsessFully
-	}
-	else
-	{
-		#Invalid_User_Pass
-		#Login_Faild
-	}
+
+if(isset($_SESSION['sess_user_id'])) {
+    echo '<h1>Welcome '.$_SESSION['sess_name'].'</h1>';
+    echo '<h4><a href="?Reset=1">Logout</a></h4>';
+} else {
+    header('location:Admin.php');
 }
-else
-{
-	#Show Form
-}
-*/
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
-<form action="#" method="post">
-	<input type="text" name="u" placeholder="User_Name">
-	<input type="password" name="p" placeholder="Password">
-	<input type="submit" name="" value="Login">
-</form>
-</body>
-</html>
