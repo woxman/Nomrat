@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56ee6ef8-517c-484e-9282-5666f9f5b757" name="Default" comment="25">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Definitions/Functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/Definitions/Functions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test.php" beforeDir="false" afterPath="$PROJECT_DIR$/Test.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Theme/default/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Theme/default/Style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,16 +38,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Test.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
-              <caret line="8" column="95" selection-start-line="8" selection-start-column="95" selection-end-line="8" selection-end-column="95" />
+              <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="9" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Definitions/Functions.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="214">
@@ -147,8 +143,8 @@
       <find>co</find>
       <find>Cop</find>
       <find>Invalid</find>
-      <find>sess_user_id</find>
       <find>loca</find>
+      <find>sess_user_id</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -198,7 +194,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-44" />
     <option name="y" value="244" />
     <option name="width" value="697" />
@@ -310,7 +306,7 @@
       <workItem from="1548404826495" duration="597000" />
       <workItem from="1548441184498" duration="1777000" />
       <workItem from="1548511255401" duration="6519000" />
-      <workItem from="1548607961370" duration="10715000" />
+      <workItem from="1548607961370" duration="11042000" />
     </task>
     <task id="LOCAL-00001" summary="Strat ...">
       <created>1546524997418</created>
@@ -491,7 +487,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="389294000" />
+    <option name="totallyTimeSpent" value="389621000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -790,6 +786,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="9" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Admin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="214">
@@ -813,13 +816,6 @@
             <element signature="n#style#0;n#image#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#image#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="95" selection-start-line="8" selection-start-column="95" selection-end-line="8" selection-end-column="95" />
         </state>
       </provider>
     </entry>

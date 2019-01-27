@@ -6,7 +6,8 @@ if (isset($_Get['Reset']))
     switch ($Reset)
     {
         case 1:
-            unset($_SESSION['sess_user_id'],$_SESSION['sess_username'],$_SESSION['sess_name']);
+            Log_Out();
+            Redirect_To("Test.php");
     }
 }
 
