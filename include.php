@@ -7,7 +7,6 @@
 require_once "Fr/Js/Time_Date/Jdf.php";
 require_once "Definitions/Amounts.php";
 require_once "Definitions/Functions.php";
-
 if (file_exists('Definitions/Config.php')) {
     include_once "Definitions/Config.php";
 }

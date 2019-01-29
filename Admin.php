@@ -1,21 +1,28 @@
 <?php
 session_start();
 require_once "Include.php";
-try {
-    global $DB_Host;
-    global $DB_Name;
-    global $DB_User;
-    global $DB_Pass;
+require_once "Definitions/Con_DB.php";
+?>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ورود ادمین</title>
 
-    $db = new PDO('mysql:host='.$DB_Host.';dbname='.$DB_Name.';charset=utf8mb4', $DB_User, $DB_Pass);
-    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
-}
-catch (PDOException $e)
-{
-    echo "Connection failed : ". $e->getMessage();
-}
+</head>
+<body  onload="ShowDate();">
 
+<!--------------------------Start Header---------------------------------------->
+<div>
+    <?php print_r(Clock_Data()); ?>
+</div>
+    <br><br><br>
+<!--------------------------End Header---------------------------------------->
+<!--------------------------Start Body---------------------------------------->
+<?php
 
 $msg = "";
 if(isset($_POST['send'])) {
@@ -36,8 +43,8 @@ if(isset($_POST['send'])) {
                 $_SESSION['sess_user_id']   = $row['id'];
                 $_SESSION['sess_username'] = $row['user'];
                 $_SESSION['sess_name'] = $row['email'];
-              Redirect_To('Test.php');
-           } else {
+                Redirect_To('?Login=True');
+            } else {
                 $msg = "شناسه و پسورد اشتباه است!";
             }
         } catch (PDOException $e) {
@@ -47,27 +54,32 @@ if(isset($_POST['send'])) {
         $msg = "Both fields are required!";
     }
 }
+
+#-------------------------------------------------------------------
+#Logout_________________________________________________________________User
+switch (isset($_REQUEST['Login']))
+{
+    case 'True':
+        if (isset($_REQUEST['False']))
+        {
+            session_destroy();
+            echo("<meta http-equiv=\"refresh\" content=\"0\">");
+            header('Refresh: 1; url=Test.php');
+
+        }
+#Logout_________________________________________________________________User
+        if(isset($_SESSION['sess_user_id']))
+        {
+            echo '<h1>Welcome '.$_SESSION['sess_name'].'</h1>';
+            echo '<a href="?False"><button>Logout</button></a>';
+        }
+        else
+        {
+
+        }
+        break;
+}
 ?>
-
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>ورود ادمین</title>
-
-</head>
-<body  onload="ShowDate();">
-
-<!--------------------------Start Header---------------------------------------->
-<div>
-    <?php print_r(Clock_Data()); ?>
-</div>
-    <br><br><br>
-<!--------------------------End Header---------------------------------------->
-<!--------------------------Start Body---------------------------------------->
 <div class="body" dir="rtl" align="center">
     <div class="form bg-light">
         <div class="h_form bg-light"><?php print ($A_T_1)?></div>
@@ -78,13 +90,13 @@ if(isset($_POST['send'])) {
                 <div class="">
                     <label for="username" class="control-label"><?php echo($A_U_1) ?></label>
                     <div class="col-sm-11">
-                        <input type="text" class="form-control form_f" id="username"  name="username" required>
+                        <input type="text" class="form-control form_f" id="username"  name="username" required dir="ltr">
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="password" class="control-label"><?php echo($A_P_1) ?></label>
                     <div class="col-sm-11">
-                        <input type="password" class="form-control form_f" id="password"  name="password"  required>
+                        <input type="password" class="form-control form_f" id="password"  name="password"  required dir="ltr">
                     </div>
                 </div>
                 <div class="form-group btn_f" align="center">
@@ -92,8 +104,7 @@ if(isset($_POST['send'])) {
                         <button type="submit" class="btn btn-primary " id="send" name="send"><?php echo($A_S_1) ?></button>
                     </div>
                 </div>
-            <span class="loginMsg
-"><?php echo @$msg;?></span>
+            <span class="loginMsg alert-danger alert-link "><?php echo @$msg;?></span>
             <a href="Recover.php"><p><?php echo($A_R_1) ?></p></a>
         </form>
     </div>
