@@ -1,19 +1,16 @@
 <?php
 session_start();
-if (isset($_Get['Reset']))
+if (isset($_REQUEST['True']))
 {
-    $Reset=isset($_Get['Reset']);
-    switch ($Reset)
-    {
-        case 1:
-            Log_Out();
-            Redirect_To("Test.php");
-    }
-}
+    session_destroy();
+    echo("<meta http-equiv=\"refresh\" content=\"0\">");
+    header('Refresh: 1; url=Test.php');
 
-if(isset($_SESSION['sess_user_id'])) {
+}
+if(isset($_SESSION['sess_user_id']))
+{
     echo '<h1>Welcome '.$_SESSION['sess_name'].'</h1>';
-    echo '<h4><a href="?Reset=1">Logout</a></h4>';
+    echo '<a href="?True"><button>Logout</button></a>';
 } else {
     header('location:Admin.php');
 }

@@ -1,21 +1,11 @@
 <?php
 session_start();
 require_once "Include.php";
-
-/*
-global $DB_Host;
-global $DB_Name;
-global $DB_User;
-global $DB_Pass;
-*/
 try {
-    $DB_Host="localhost";                      //It is usually "/localhost/"
-
-    $DB_Name="Naseri";                      //It is usually "/localhost/"
-
-    $DB_User="root";                           //Database Username
-
-    $DB_Pass="";
+    global $DB_Host;
+    global $DB_Name;
+    global $DB_User;
+    global $DB_Pass;
 
     $db = new PDO('mysql:host='.$DB_Host.';dbname='.$DB_Name.';charset=utf8mb4', $DB_User, $DB_Pass);
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -31,6 +21,7 @@ $msg = "";
 if(isset($_POST['send'])) {
     $username = trim($_POST['username']);
     $password = trim($_POST['password']);
+    $password=Get_Hash($password);
     if($username != "" && $password != "") {
         try {
             $query = "select * from `admins` where `user`=:user and `pass`=:pass";
@@ -47,7 +38,7 @@ if(isset($_POST['send'])) {
                 $_SESSION['sess_name'] = $row['email'];
               Redirect_To('Test.php');
            } else {
-                $msg = "Invalid username and password!";
+                $msg = "شناسه و پسورد اشتباه است!";
             }
         } catch (PDOException $e) {
             echo "Error : ".$e->getMessage();
@@ -96,12 +87,13 @@ if(isset($_POST['send'])) {
                         <input type="password" class="form-control form_f" id="password"  name="password"  required>
                     </div>
                 </div>
-                <div class="form-group btn_f" align="left">
+                <div class="form-group btn_f" align="center">
                     <div class="col-sm-offset-2 col-sm-5 " >
                         <button type="submit" class="btn btn-primary " id="send" name="send"><?php echo($A_S_1) ?></button>
                     </div>
                 </div>
-            <span class="loginMsg"><?php echo @$msg;?></span>
+            <span class="loginMsg
+"><?php echo @$msg;?></span>
             <a href="Recover.php"><p><?php echo($A_R_1) ?></p></a>
         </form>
     </div>
