@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="56ee6ef8-517c-484e-9282-5666f9f5b757" name="Default" comment="34">
+    <list default="true" id="56ee6ef8-517c-484e-9282-5666f9f5b757" name="Default" comment="35">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin.php" afterDir="false" />
     </list>
@@ -33,8 +33,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="67" column="14" selection-start-line="67" selection-start-column="14" selection-end-line="67" selection-end-column="14" />
+            <state relative-caret-position="427">
+              <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Definitions/Amounts.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -217,7 +226,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="450" />
     <option name="y" value="30" />
     <option name="width" value="697" />
@@ -322,7 +331,7 @@
       <workItem from="1548607961370" duration="11042000" />
       <workItem from="1548697310833" duration="1471000" />
       <workItem from="1548775341065" duration="8873000" />
-      <workItem from="1548865449274" duration="1634000" />
+      <workItem from="1548865449274" duration="3298000" />
     </task>
     <task id="LOCAL-00001" summary="Strat ...">
       <created>1546524997418</created>
@@ -506,14 +515,21 @@
       <option name="project" value="LOCAL" />
       <updated>1548781733416</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="35">
+      <created>1548877878269</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1548877878270</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="401599000" />
+    <option name="totallyTimeSpent" value="403263000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="450" y="30" width="697" height="745" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" sideWeight="0.50621116" side_tool="true" weight="0.20278184" />
@@ -582,7 +598,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Strat ..." />
     <MESSAGE value="1" />
     <MESSAGE value="2" />
     <MESSAGE value="3" />
@@ -607,7 +622,8 @@
     <MESSAGE value="24" />
     <MESSAGE value="25" />
     <MESSAGE value="34" />
-    <option name="LAST_COMMIT_MESSAGE" value="34" />
+    <MESSAGE value="35" />
+    <option name="LAST_COMMIT_MESSAGE" value="35" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -649,13 +665,6 @@
     <entry file="file://$PROJECT_DIR$/Signup.php" />
     <entry file="file://$PROJECT_DIR$/installer.php" />
     <entry file="file://$PROJECT_DIR$/magic.js" />
-    <entry file="file://$PROJECT_DIR$/Definitions/Amounts.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/process.php" />
     <entry file="file://$PROJECT_DIR$/Fr/Js/Api-Clock.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -761,13 +770,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="67" column="14" selection-start-line="67" selection-start-column="14" selection-end-line="67" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Process_1.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="782">
@@ -807,6 +809,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="49" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Definitions/Amounts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
         </state>
       </provider>
     </entry>
