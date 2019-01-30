@@ -57,16 +57,16 @@ if(isset($_POST['send'])) {
 
 #-------------------------------------------------------------------
 #Logout_________________________________________________________________User
-switch (isset($_REQUEST['Login']))
-{
+switch (isset($_REQUEST['Login'])) {
     case 'True':
-        if (isset($_REQUEST['False']))
-        {
+        if (isset($_REQUEST['False'])) {
             session_destroy();
             echo("<meta http-equiv=\"refresh\" content=\"0\">");
-            header('Refresh: 1; url=Test.php');
+            header('Refresh: 1; url=Admin.php');
 
         }
+        break;
+}
 #Logout_________________________________________________________________User
         if(isset($_SESSION['sess_user_id']))
         {
@@ -75,42 +75,13 @@ switch (isset($_REQUEST['Login']))
         }
         else
         {
-
+            echo "sdsd";
         }
-        break;
-}
+
 ?>
-<div class="body" dir="rtl" align="center">
-    <div class="form bg-light">
-        <div class="h_form bg-light"><?php print ($A_T_1)?></div>
-        <div class="img_l">
-            <img src="Contact/Logo/logo.png" alt="" class="img_l">
-        </div>
-        <form method="post" action="" class="form-group form_c">
-                <div class="">
-                    <label for="username" class="control-label"><?php echo($A_U_1) ?></label>
-                    <div class="col-sm-11">
-                        <input type="text" class="form-control form_f" id="username"  name="username" required dir="ltr">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="password" class="control-label"><?php echo($A_P_1) ?></label>
-                    <div class="col-sm-11">
-                        <input type="password" class="form-control form_f" id="password"  name="password"  required dir="ltr">
-                    </div>
-                </div>
-                <div class="form-group btn_f" align="center">
-                    <div class="col-sm-offset-2 col-sm-5 " >
-                        <button type="submit" class="btn btn-primary " id="send" name="send"><?php echo($A_S_1) ?></button>
-                    </div>
-                </div>
-            <span class="loginMsg alert-danger alert-link "><?php echo @$msg;?></span>
-            <a href="Recover.php"><p><?php echo($A_R_1) ?></p></a>
-        </form>
-    </div>
 <!--------------------------End Body---------------------------------------->
 <!--------------------------Start Footer---------------------------------------->
-    <?php print_r(Copy_Right());?>
+    <?php #print_r(Copy_Right());?>
 <!--------------------------End Footer---------------------------------------->
 </div>
 </body>
