@@ -1,17 +1,10 @@
 <?php
-session_start();
-if (isset($_REQUEST['True']))
-{
-    session_destroy();
-    echo("<meta http-equiv=\"refresh\" content=\"0\">");
-    header('Refresh: 1; url=Test.php');
+// the array
+$arrX = array("Kay", "Joe","Susan", "Frank");
 
-}
-if(isset($_SESSION['sess_user_id']))
-{
-    echo '<h1>Welcome '.$_SESSION['sess_name'].'</h1>';
-    echo '<a href="?True"><button>Logout</button></a>';
-} else {
-    header('location:Admin.php');
-}
+// get random index from array $arrX
+$randIndex = array_rand($arrX);
+
+// output the value for the random index
+echo $arrX[$randIndex];
 ?>
