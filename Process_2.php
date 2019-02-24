@@ -7,7 +7,7 @@ $User_A =@$_POST['User'];
 $Email_A =@$_POST['Mail'];
 $Pass_A =@$_POST['Pass'];
 $PPass_A =@$_POST['PPass'];
-$Photo_A = "Profile/Admin.png";
+$Photo_A = "Admin/Profile/Admin.png";
 global $Nexted;
 $Nexted=@$_POST['Hidden'];
 //Form_________2
@@ -50,11 +50,10 @@ $Link_C->query($sql);
     echo ("</div>");
 
 
-sleep(6);
-echo("<meta http-equiv=\"refresh\" content=\"0\">");
-header('Refresh: 1; url=index.php');
 sleep(3);
-mysqli_close($Link_C);
+echo ("<a href='index.php'><button class='btn btn-danger'> Nex Step</button></a>");
+sleep(3);
+#mysqli_close($Link_C);
 ?>
 
 

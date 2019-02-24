@@ -134,8 +134,7 @@ function Form_1()
     echo("        <form name='form-name' action='#'>");
     echo("            <div class='form-group row'>");
     echo("                <label for='User_H' class='col-sm-5 col-form-label'>$D_H</label>");
-    echo("                <
-                 class='col-sm-5'>");
+    echo("                <div class='col-sm-5'>");
     echo("                    <input type='text' class='form-control' id='User_H' name='User_H' value='localhost' required>");
     echo("                </div>");
     echo("            </div>");
@@ -208,14 +207,14 @@ function form_2(){
     echo("            <div class='form-group row'>");
     echo("                <label for='Pass' class='col-sm-5 col-form-label'>$I_P</label>");
     echo("                <div class='col-sm-5'>");
-    echo("                    <input type='password' class='form-control' id='Pass' name='Pass' required>");
+    echo("                    <input type='text' class='form-control' id='Pass' name='Pass' required>");
     echo("                </div>");
     echo("            </div>");
     echo("<br>");
     echo("            <div class='form-group row'>");
     echo("                <label for='PPass' class='col-sm-5 col-form-label'>$I_PP</label>");
     echo("                <div class='col-sm-5'>");
-    echo("                    <input type='password' class='form-control' id='PPass' name='PPass' required>");
+    echo("                    <input type='text' class='form-control' id='PPass' name='PPass' required>");
     echo("                </div>");
     echo("            </div>");
     echo("                    <input type='hidden' class='form-control' id='Hidden' name='Hidden' value='1' required>");
@@ -265,10 +264,6 @@ function Get_Hash($str)
     $salt="Hekta";
     $hash=hash('sha256',$salt.$str);
     return($hash);
-}
-function Panel()
-{
-
 }
 
 

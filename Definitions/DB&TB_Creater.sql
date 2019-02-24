@@ -25,14 +25,14 @@ SET time_zone = "+00:00";
 --
 -- Table structure for table `admins`
 --
-CREATE Database Naseri;
-use Naseri;
+CREATE Database naserii;
+use naserii;
 CREATE TABLE IF NOT EXISTS `admins` (
-  `ID` int(3) NOT NULL,
-  `Users` varchar(10) NOT NULL,
-  `Email` varchar(40) NOT NULL,
-  `Pass` varchar(256) NOT NULL,
-  `Photo` varchar(124) NOT NULL,
+  `id` int(3) NOT NULL,
+  `user` varchar(10) NOT NULL,
+  `email` varchar(40) NOT NULL,
+  `pass` varchar(256) NOT NULL,
+  `photo` varchar(124) NOT NULL,
   PRIMARY KEY (`ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -43,17 +43,17 @@ CREATE TABLE IF NOT EXISTS `admins` (
 --
 
 CREATE TABLE IF NOT EXISTS `scores` (
-  `ID` int(20) NOT NULL,
-  `Mehr` int(2) NOT NULL,
-  `Aban` int(2) NOT NULL,
-  `Azar` int(11) NOT NULL,
-  `Dey` int(2) NOT NULL,
-  `Bahman` int(2) NOT NULL,
-  `Esfand` int(2) NOT NULL,
-  `Farvardin` int(2) NOT NULL,
-  `Ordibehesht` int(2) NOT NULL,
-  `Khordad` int(2) NOT NULL,
-  `Rate` int(5) NOT NULL,
+  `id` int(20) NOT NULL,
+  `mehr` int(2) NOT NULL,
+  `aban` int(2) NOT NULL,
+  `azar` int(11) NOT NULL,
+  `dey` int(2) NOT NULL,
+  `bahman` int(2) NOT NULL,
+  `esfand` int(2) NOT NULL,
+  `farvardin` int(2) NOT NULL,
+  `ordibehesht` int(2) NOT NULL,
+  `khordad` int(2) NOT NULL,
+  `rate` int(5) NOT NULL,
   PRIMARY KEY (`ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -64,22 +64,22 @@ CREATE TABLE IF NOT EXISTS `scores` (
 --
 
 CREATE TABLE IF NOT EXISTS `students` (
-  `ID` varchar(20) NOT NULL,
-  `Name` varchar(20) NOT NULL,
-  `Family` varchar(20) NOT NULL,
-  `F_Name` varchar(20) NOT NULL,
-  `D_Birth` varchar(11) NOT NULL,
-  `Address` varchar(1024) CHARACTER SET utf32 NOT NULL,
-  `Sh_Sh` int(11) NOT NULL,
-  `Base` int(2) NOT NULL,
-  `Field` varchar(30) NOT NULL,
-  `School` varchar(30) NOT NULL,
-  `Area` varchar(30) NOT NULL,
-  `State` varchar(30) NOT NULL,
-  `Phone` int(11) NOT NULL,
-  `Email` varchar(40) NOT NULL,
-  `Pass` varchar(18) NOT NULL,
-  `Photo` varchar(124) NOT NULL,
+  `id` varchar(20) NOT NULL,
+  `name` varchar(20) NOT NULL,
+  `family` varchar(20) NOT NULL,
+  `f_name` varchar(20) NOT NULL,
+  `d_birth` varchar(11) NOT NULL,
+  `address` varchar(1024) CHARACTER SET utf32 NOT NULL,
+  `sh_sh` int(11) NOT NULL,
+  `base` int(2) NOT NULL,
+  `field` varchar(30) NOT NULL,
+  `school` varchar(30) NOT NULL,
+  `area` varchar(30) NOT NULL,
+  `state` varchar(30) NOT NULL,
+  `phone` int(11) NOT NULL,
+  `email` varchar(40) NOT NULL,
+  `pass` varchar(18) NOT NULL,
+  `photo` varchar(124) NOT NULL,
   PRIMARY KEY (`ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -90,19 +90,19 @@ CREATE TABLE IF NOT EXISTS `students` (
 --
 
 CREATE TABLE IF NOT EXISTS `teachers` (
-  `ID` int(20) NOT NULL,
-  `Name` varchar(20) NOT NULL,
-  `Family` varchar(20) NOT NULL,
-  `F_Name` varchar(20) NOT NULL,
-  `Evidence` varchar(30) NOT NULL,
-  `Post` varchar(50) NOT NULL,
-  `School` varchar(30) CHARACTER SET utf32 NOT NULL,
-  `Area` varchar(30) NOT NULL,
-  `State` varchar(30) NOT NULL,
-  `Phone` int(11) NOT NULL,
-  `Email` varchar(40) NOT NULL,
-  `Pass` varchar(18) NOT NULL,
-  `Photo` varchar(124) NOT NULL,
+  `id` int(20) NOT NULL,
+  `name` varchar(20) NOT NULL,
+  `family` varchar(20) NOT NULL,
+  `f_name` varchar(20) NOT NULL,
+  `evidence` varchar(30) NOT NULL,
+  `post` varchar(50) NOT NULL,
+  `school` varchar(30) CHARACTER SET utf32 NOT NULL,
+  `area` varchar(30) NOT NULL,
+  `state` varchar(30) NOT NULL,
+  `phone` int(11) NOT NULL,
+  `email` varchar(40) NOT NULL,
+  `pass` varchar(18) NOT NULL,
+  `photo` varchar(124) NOT NULL,
   PRIMARY KEY (`ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -113,12 +113,12 @@ CREATE TABLE IF NOT EXISTS `teachers` (
 --
 
 CREATE TABLE IF NOT EXISTS `users` (
-  `ID` int(3) unsigned NOT NULL AUTO_INCREMENT,
-  `Users` varchar(10) NOT NULL,
-  `Post` varchar(50) NOT NULL,
-  `Email` varchar(40) NOT NULL,
-  `Pass` varchar(18) NOT NULL,
-  `Photo` varchar(124) NOT NULL,
+  `id` int(3) unsigned NOT NULL AUTO_INCREMENT,
+  `user` varchar(10) NOT NULL,
+  `post` varchar(50) NOT NULL,
+  `email` varchar(40) NOT NULL,
+  `pass` varchar(18) NOT NULL,
+  `photo` varchar(124) NOT NULL,
   PRIMARY KEY (`ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 

@@ -45,9 +45,8 @@ if (file_exists($FileName))
 
 }
 sleep(4);
+echo ("<a href='index.php'><button class='btn btn-danger'> Nex Step</button></a>");
 
-echo("<meta http-equiv=\"refresh\" content=\"0\">");
-header('Refresh: 1; url=index.php');
 
 
 

@@ -1,6 +1,8 @@
 <link rel="stylesheet" href="Fr/Css/Bootstrap.min.css">
 <link rel="stylesheet" href="Fr/Css/All.css">
 <script src="Fr/Js/All.min.js"></script>
+<script src="Fr/Js/Bootstrap.min.js"></script>
+<script src="Fr/Js/Popper.min.js"></script>
 <script src="Fr/Js/Jquery.min.js"></script>
 <script src="Fr/Js/Time_Date/Script.js"></script>
 <?php
